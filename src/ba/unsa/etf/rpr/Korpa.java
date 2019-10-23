@@ -28,6 +28,7 @@ public class Korpa {
 
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl temp = new Artikl();
+        if(artikli.size() == 0) System.out.println("Nemate artikala u korpi!");
         for(int i = 0; i < artikli.size(); i++) {
             if(kod.equals(artikli.get(i).getKod())) {
                 temp = artikli.get(i);
