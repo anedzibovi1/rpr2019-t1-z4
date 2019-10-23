@@ -5,8 +5,12 @@ import java.util.ArrayList;
 public class Korpa {
     private ArrayList<Artikl> artikli;
 
-    Korpa(){
+    Korpa() {
         artikli = new ArrayList<Artikl>();
+    }
+
+    Korpa(ArrayList<Artikl> ar) {
+        artikli = ar;
     }
 
     public boolean dodajArtikl(Artikl artikl) {

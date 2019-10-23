@@ -9,6 +9,10 @@ public class Supermarket {
         artikli = new ArrayList<Artikl>();
     }
 
+    public Supermarket(ArrayList<Artikl> ar) {
+        artikli = ar;
+    }
+
     public boolean dodajArtikl(Artikl artikl) {
         if(artikli.size() == 1000) return false;
         artikli.add(artikl);
